@@ -31,7 +31,7 @@ To get started with Kanban, follow these steps:
 2. Install the project dependencies:
 
     ```bash
-    cd kanban-next
+    cd full-stack-taskboards
     yarn install
     ```
 
