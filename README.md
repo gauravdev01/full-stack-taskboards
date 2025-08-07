@@ -1,5 +1,3 @@
-[![Build Status](https://github.com/jonaszb/kanban-next/actions/workflows/playwright.yml/badge.svg?event=pull_request)](https://github.com/jonaszb/kanban-next/actions/workflows/playwright.yml) [![Build Status](https://github.com/jonaszb/kanban-next/actions/workflows/chromatic.yml/badge.svg?event=pull_request)](https://github.com/jonaszb/kanban-next/actions/workflows/chromatic.yml) [![MIT License](https://badgen.net/badge/license/MIT/blue)](https://github.com/jonaszb/kanban-next/blob/main/LICENSE)
-
 # Kanban
 
 Kanban is a Kanban board application built using Next.js. It provides a user-friendly interface for managing tasks and organizing projects using the Kanban methodology. This readme file provides an overview of the project and its setup instructions.
@@ -27,7 +25,7 @@ To get started with Kanban, follow these steps:
 1. Clone the project repository from GitHub:
 
     ```bash
-    git clone https://github.com/jonaszb/kanban-next.git
+    git clone https://github.com/gauravdev01/full-stack-taskboards
     ```
 
 2. Install the project dependencies:
@@ -65,7 +63,6 @@ For local testing, you can seed the DB with some initial data
 ```bash
 yarn seed myuser@testmail.com # Replace with an email you can use to log in
 ```
-You can use any permanent email, temporary mail service or [webhook.site](https://webhook.site)
 
 ### Running Locally
 
@@ -90,7 +87,7 @@ CHROMATIC_PROJECT_TOKEN=project-token # Create a new project on Chromatic to obt
 
 ### Deployment
 
-The project is hosted on Vercel, which automatically deploys the application when a pull request is merged into the main branch. The live site can be accessed at [https://kanban-next.vercel.app/](https://kanban-next.vercel.app/).
+The project is hosted on Vercel, which automatically deploys the application when a pull request is merged into the main branch. The live site can be viewed at: https://full-stack-taskboards.vercel.app/login
 
 ## Testing
 
@@ -108,7 +105,6 @@ Kanban includes various testing options:
     yarn test:e2e
     ```
 
-    Running Playwright tests locally requires the WEBHOOK_ID and WEBHOOK_ID_ALT environment variables mentioned in [Continuous Integration](#continuous-integration) to be set.
 
 -   **Chromatic Tests**: Chromatic tests for visual regression are executed during the CI process.
 
@@ -129,14 +125,6 @@ Kanban relies on several external services, such as authentication providers, SM
 -   [Google OAuth](https://developers.google.com/identity/protocols/oauth2)
 -   [GitHub OAuth](https://docs.github.com/en/developers/apps/building-oauth-apps)
 -   [Supabase](https://supabase.com/)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-Special thanks to [Frontend Mentor](https://www.frontendmentor.io/) for providing the design and to the following services, technologies and libraries used:
 
 -   [Next.js](https://nextjs.org/)
 -   [Prisma](https://www.prisma.io/)
